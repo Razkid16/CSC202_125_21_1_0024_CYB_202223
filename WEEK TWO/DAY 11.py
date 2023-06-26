@@ -67,7 +67,7 @@ def playgame():
             is_playing = False
         
         else:
-            another_card = input("press 'y' to Deal an extra card or 'n' to show results").lower()
+            another_card = input("press 'y' to Deal an extra card or 'n' to show results\n").lower()
             
             if another_card == "y":
                 user_cards.append(deal_cards())
@@ -85,5 +85,5 @@ def playgame():
     print(f"Dealer final score is {sum_dealer_cards}, {dealer_cards}")
     compare(sum_user_cards, sum_dealer_cards)
 
-while input("Do you want to play a game of Blackjack, Y/N:") == "y":
+while input("Do you want to play a game of Blackjack, Y/N:\n") == "y":
     playgame()
